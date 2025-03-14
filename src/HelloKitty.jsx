@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HelloKittyDesign.css';
 import traditionalVideo from '/src/assets/traditional.mp4';
+import girlImage from '/src/assets/IMG_6986.PNG';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -65,7 +66,7 @@ const HelloKitty = () => {
 
 
   // Placeholder for image - replace with actual image path
-  const girlImage = "/src/assets/IMG_6986.PNG"; // Update this path
+  // const girlImage = "/src/assets/IMG_6986.PNG"; // Update this path
 
   return (
     <div className="hello-kitty-container">
