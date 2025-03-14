@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.hello-kitty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins */
+  }
+  
+  /* Header Section */
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInPop 0.8s ease-out forwards;
+  }
+  @keyframes fadeInPop {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .title-text {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+  }
+  
+  .hello-kitty-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 0.5rem;
+  }
+  
+  .subtitle-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ec4899; /* pink color */
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards 0.5s;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  /* Image Section */
+  .image-section {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image-container {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fbcfe8; /* light pink */
+    animation: floatAnimation 3s ease-in-out infinite;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .kitty-icon-bottom-left {
+    position: absolute;
+    bottom: -2rem;
+    left: -2rem;
+  }
+  
+  .kitty-small-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .heart-icons-bottom-right {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heart-icon {
+    width: 3rem;
+    height: 4rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .chat-section {
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  .chat-bubble {
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+    font-size: 14px;
+    
+  }
+  
+  .sent {
+    align-self: flex-end;
+    background-color: #6366f1;
+    color: white;
+  }
+  
+  .received {
+    align-self: flex-start;
+    background-color: #e5e7eb;
+    color: black;
+  }
+  /* .chat-bubble {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInChat 0.5s ease-out forwards;
+  }
+  
+  .chat-bubble.sent {
+    animation-delay: 0.2s;
+  }
+  
+  .chat-bubble.received:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .chat-bubble.received:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .chat-bubble.received:nth-child(4) {
+    animation-delay: 1.4s;
+  }
+  
+  @keyframes slideInChat {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } */
+  .header-section {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .cute-cat {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInHeader 0.8s ease-out forwards 0.7s;
+  }
+  
+  @keyframes fadeInHeader {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .birthday-image {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+  }
+  
+  .caption1 {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Date Section */
+  .date-section {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .kankan-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 0.5s ease-out forwards 1s;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .kankan-image img {
+    max-width: 90%; /* Ensures it doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+  }
+  
+  /* Hello Kitty Section */
+.hello-kitty-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .hello-kitty-highlight {
+    color: #ff69b4;
+  }
+  
+  .hello-kitty-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 90%;
+  }
+  
+  .kitty-image {
+    width: 80px;
+    height: auto;
+  }
+  
+  /* Traditional Outfit Section */
+  .traditional-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .traditional-outfit-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .traditional-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .traditional-video-container {
+    width: 100%;
+    max-width: 500px;  /* Adjust width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px; /* Optional rounded corners */
+  }
+  
+  .traditional-video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  
+  .date-label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .date-value {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #ec4899; /* pink color */
+    margin-top: 0.5rem;
+  }
+  
+  /* Chat Section */
+  .chat-section {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .chat-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .chat-title-black {
+    color: black;
+  }
+  
+  .chat-title-purple {
+    color: #6366f1; /* indigo color */
+  }
+  .slideshow-container {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  
+  .slideshow-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Timer Section */
+  .timer-section {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .timer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .timer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .timer-item {
+    text-align: center;
+  }
+  
+  .timer-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ec4899; /* pink color */
+  }
+  
+  .timer-label {
+    color: black;
+    margin-top: 0.25rem;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 480px) {
+    .subtitle-text {
+      font-size: 2rem;
+    }
+    
+    .profile-image-container {
+      width: 12rem;
+      height: 12rem;
+    }
+    
+    .chat-title {
+      font-size: 2rem;
+    }
+    
+    .date-value {
+      font-size: 1.75rem;
+    }
+  }
